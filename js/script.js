@@ -16,10 +16,19 @@ $(document).ready(function () {
 
   $('.dropdown-container').mouseenter(function () {
     $('.dropdown').removeClass('active');
+    $('.dropdown-container').removeClass('black');
     $(this).find('.dropdown').addClass('active');
+    $(this).addClass('black');
   });
+
 
   $('body').click(function () {
     $('.dropdown').removeClass('active');
+    $('.dropdown-container').removeClass('black');
+  });
+
+  $('.dropdown-container').click(function () {
+    $('.dropdown').removeClass('active');
+    $(this).find('.dropdown').toggleClass('active');
   });
 });
