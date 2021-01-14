@@ -14,7 +14,7 @@
 
 .container{
   width: 1280px;
-  height: 100vh;
+  height: calc(100vh - 20px);
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   color: #8b959e;
