@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex{
+  display: flex;
+}
+
+.black{
+  color: #000;
+}
+
+.container{
+  width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: #8b959e;
+}
+
+nav{
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.nav-left, .nav-right{
+  height: 100%;
+  padding: 35px 0;
+}
+
+.nav-left ul li{
+  margin-right: 40px;
+}
+
+.nav-right ul li{
+  margin-left: 40px;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a img{
+  height: 23px;
+  vertical-align: text-top;
+}
+
+.dropdown-container{
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown{
+  position: absolute;
+  top: 40px;
+  border-radius: 7px;
+  display: none;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(232, 232, 232, 0.7);
+}
+
+.features{
+  width: 800px;
+  padding: 10px 30px;
+  margin-left: -200px;
+  justify-content: space-between;
+}
+
+.col{
+  display: inline-block;
+  width: 180px;
+}
+
+.col a{
+  display: block;
+  padding: 10px 0;
+}
+
+.plans{
+  width: 200px;
+  padding: 10px 0;
+}
+
+.about-us{
+  width: 230px;
+  padding: 10px 0;
+}
+
+.help{
+  width: 180px;
+  padding: 10px 0;
+}
+
+.plans li, .about-us li, .help li{
+  padding: 10px 0;
+  display: block;
+}
+
+.features a, .plans a, .about-us a, .help a{
+  text-decoration: none;
+  color: #8b959e;
+}
+
+.active{
+  display: block;
+}
+
+li button{
+  padding: 13px 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+li button:focus{
+  outline: none;
+}
+
+#button-get-the-app{
+  background: #000;
+  color: #fff;
+  margin-left: -20px;
+}
+
+/* TODO: refactoring */
