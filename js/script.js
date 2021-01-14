@@ -14,19 +14,12 @@ $(document).ready(function () {
     }
   );
 
-  $('.dropdown-container').click(function () {
-    $(this).find('.dropdown').toggleClass('active');
-    $(this).toggleClass('black');
+  $('.dropdown-container').mouseenter(function () {
+    $('.dropdown').removeClass('active');
+    $(this).find('.dropdown').addClass('active');
   });
 
-  // $('.dropdown-container').hover(
-  //   function () {
-  //     $(this).css('color', '#000');
-  //     $(this).find('.dropdown').addClass('active');
-  //   },
-  //   function () {
-  //     $(this).css('color', '#8b959e');
-  //     $(this).find('.dropdown').removeClass('active');
-  //   }
-  // );
+  $('body').click(function () {
+    $('.dropdown').removeClass('active');
+  });
 });
